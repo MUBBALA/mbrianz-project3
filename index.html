@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mynewwebsite</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+
+body {
+
+    color: rgba(0, 0, 0, 0.75);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+html {
+
+    line-height: 1.65;
+    letter-spacing: 0;
+}
+/**
+ * Headings
+ */
+ h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 13px;
+  }
+
+
+h1, h2, h3, h4, h5, h6 {
+    text-rendering: optimizeLegibility;
+    line-height: 1;
+    margin-top: 0;
+  }
+
+
+  h4, h5, h6 {
+    line-height: 1.6;
+  }
+p {
+    margin: auto auto 1.5em;
+  }
+  
+
+  /*resources styles*/
+
+  /*resources-header-h2 styles */
+  
+  .resources a {
+    color: #CC4E46;
+  }
+  .resources a[href]:hover, a[href]:focus {
+    color: #000000;
+  }
+  .resources a:visited {
+    color: #CC4E46;
+  }
+
+  .resources h2 {
+    text-rendering: optimizeLegibility;
+    line-height: 1.2;
+    margin-bottom: 26px;
+    margin-top: 0;
+    hyphens: none;
+}
+
+.section_header {
+    margin: 13px 0 25px;
+}
+
+
+/*resources styles*/
+.resources{
+    display: grid;
+    grid-template-columns: auto;
+    margin: 10px auto;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-bottom: 52px;
+-webkit-transition: all .25s ease;
+transition: all .25s ease;
+
+}
+
+.resouce_title{
+    font-size: 125%;
+    text-transform: capitalize
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0;
+    hyphens: none;
+    color: #000000;
+
+}
+
+.resource_title a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+.resources a:active, .resources a:hover {
+    outline: 0;
+}
+
+  .resource_title a:hover {
+    border-bottom: 1px solid #000000;
+    color: #000000;
+}
+
+ .resources-inner-wrapper{
+    display: grid;
+    grid-template-columns: 330px 330px 330px;
+    background-color: rgb(202, 193, 193);
+    margin: 1em auto .5em;
+
+}
+.resources-inner{
+    padding: 10px;
+    
+}
+ .resource-one{
+    margin-right: 10px;
+    
+    
+}
+ .resource-two{
+    margin-right: 10px;
+    
+}
+
+ 
+.resources .section-heading {
+    font-family: "adelle-sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.section-heading {
+    color: #CC4E46;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.resources img{
+          width: 100%;
+          max-width: 100%;
+      }
+
+/*
+.resource-one:hover, .resource-two:hover, .resource-three:hover {
+    background-color: rgba(12, 1, 1, 0.65);
+    box-shadow: 0 0 36px 1px rgba(204, 78, 70, 0.4);
+  }
+*/
+
+    
+.resources .resource_image img {
+  border-radius: 12px;
+    margin: 0;
+    margin-bottom: 0px; 
+    margin-bottom: 26px;
+    opacity: .6;
+    -webkit-transition: opacity .25s ease, box-shadow .25s ease;
+    -moz-trasition: opacity .25s ease, box-shadow .25s ease;
+    transition: opacity .25s ease, box-shadow .25s ease;
+    width: 100%;
+}
+
+  .resource-one img, .resource-two img, .resource-three img, .resource-video {
+    /* [1] */
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    margin: 0;
+    margin-bottom: 0px; 
+    margin-bottom: 26px;
+    opacity: .6;
+    -webkit-transition: opacity .25s ease, box-shadow .25s ease;
+    -moz-trasition: opacity .25s ease, box-shadow .25s ease;
+    transition: opacity .25s ease, box-shadow .25s ease;
+    width: 100%;
+  }
+
+  
+.resources-inner:hover .resource_image img {
+    -webkit-box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 36px 0 rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+ 
+
+  .resource_content .resource_header {
+    padding: 30px 26px 0;
+  }
+  
+  .resource_content .resource_title a {
+    color: black;
+    line-height: 1.4;
+    margin-bottom: 6.5px !important;
+  }
+
+.resource_title + .resource_meta {
+  margin-bottom: 6.5px;
+}
+.resource_meta {
+  color: #000000;
+  position: relative;
+  top: -.5em;
+}
+.resource_meta a {
+  /**
+   * Force apply font-family, font-style, font-weight
+   */
+  /**
+   * Selectively apply font-family, font-style and font-weights that differ from
+   * the base settings
+   */
+  font-weight: 700;
+  letter-spacing: 0;
+}
+.resource_body {
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0 26px;
+}
+.resource_body p:last-of-type {
+  margin-bottom: 0;
+}
+
+
+  .resource_link {
+    display: block;
+    text-decoration: none;
+  }
+  .resource_footer {
+    /**
+     * Force apply font-family, font-style, font-weight
+     */
+    /**
+     * Selectively apply font-family, font-style and font-weights that differ from
+     * the base settings
+     */
+    font-weight: 700;
+    letter-spacing: 0;
+    padding: 26px 26px 19.5px;
+    text-transform: uppercase;
+  }
+  .resource_footer a {
+    text-decoration: none;
+  }
+  .resource_title, .resource_body, .resource_footer {
+    -webkit-transition: color .25s ease;
+            transition: color .25s ease;
+  }
+
+  
+/*
+  .resource-one:hover .resource_title, .resource-two:hover .resource_title, .resource-three:hover .resource_title, .resource--video:hover .resource_title {
+    color: #FFFFFF;
+  }
+  .resource-one:hover .resource_body, .resource-two:hover .resource_body, .resource-three:hover .resource_body, .resource--video:hover .resource_body {
+    color: rgba(255, 255, 255, 0.6);
+  }
+  .resource-one:hover .resource_footer, .resource-two:hover .resource_footer, .resource-three:hover .resource_footer, .resource--video:hover .resource_footer {
+    color: #FFFFFF;
+  }
+  */
+
+  /*
+  
+        #search{
+            font-size: 0.65em;
+            position: relative;
+            left: 50px;
+        }
+
+*/
+
+/*RESPONSIVE DESIGN FOR RESOURCES SECTION*/
+
+
+@media screen and (max-width: 800px) {
+    .resources{
+        margin: 0;
+        width: 100%;
+        overflow: auto;
+        padding: 10px;
+    }
+            .resources-inner-wrapper{
+                display: block;
+                margin: 0;
+                padding: 10px;
+                overflow: hidden;
+               
+            }
+                    
+        .resources-inner {
+            clear: left;
+        }
+        .resources-inner .resource__image, .resource--wide .resource__content {
+            float: left;
+            width: 50%;
+        }
+        
+        .resources-inner .resource__image {
+            padding-right: 13px;
+        }
+        .resources-inner .resource__content {
+            padding: 0 26px 0 13px;
+        }
+        
+}
+
+
+
+  
+       
+    </style>
+
+    
+</head>
+<body>
+    <section class="top-header">
+    <header>
+        <div class="websitemenu">
+            <h1 class="mobile-logo"><a href="index.html"><img src="images/enset-logo-01.png" alt=""></a></h1>
+            <div class="websitemenu-icon">
+            <img src="images/menu-icon-light.png" alt="websitemenu icon">menu
+            </div>
+    
+        </div><!--/websitemenu-->
+
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about-us.html">about us</a></li>
+                <li class="mobile"><a href="locations.html">locations</a></li>
+                <li class="mobile"><a href="contact.html">contact</a></li>
+                <li class="logo menu-logo"><a href="index.html">Dream Poultry Farm logo</a></li>
+                <li class="desktop"><a href="locations.html">locations</a></li>
+                <li class="desktop"><a href="contact.html">contact</a></li>
+            </ul>
+        </nav> 
+        
+<!-- SiteSearch Google 
+<form method="get" action="http://www.google.com/search">
+    <div id="search">
+        <label for="q">Search:</label>
+        <input id="q" name="q" size="20" maxlength="255" value=""
+        type="text"/>
+        <input name="domains" value="http://www.bubbleunder.com/"
+        type="hidden"/>
+        <input name="sitesearch" value="http://www.bubbleunder.com/"
+        checked="checked" id="mysite" type="radio"/>
+        <label for="mysite">Just this site</label>
+        <input name="sitesearch" value="" id="www" type="radio"/>
+        <label for="www">WWW</label>
+        <input name="btnG" value="Go" type="submit"/>
+    </div>
+</form>
+
+SiteSearch Google -->
+
+    </header>
+</section>
+    <section class="features">
+        <figure>
+             <img src="images/1.JPG" alt="a little goat with its mother">
+
+            <figcaption>Goats section</figcaption>
+            
+        </figure>
+             
+        <figure>
+            <img src="images/2.JPG" alt="Mother pig waiting for food">
+
+            <figcaption>Piggery Section</figcaption>
+
+        </figure>
+        <figure>
+            <img src="images/3.JPG" alt="Kroilers in their house">
+
+            <figcaption>Poultry/Kroilers section </figcaption>
+        </figure>
+    </section>
+
+    <section class="content-wrap">
+        <main>
+            <section class="col-1">
+                <h2>LEFT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua, Ut enim ad minim veniam. </p>
+
+            </section>
+            <section class="col-2">
+                <h2>RIGHT</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut labore et dolore magna aliqua, Ut enim ad minim veniam. </p>
+
+            </section>
+            <section class="newsletter">
+                <h3>stay connected</h3>
+                <p>Join our email list to recieve exclusive updates, offers, and content. Don’t miss a post. Sign up for our weekly newsletter.</p>
+                 <form action="" method="">
+                     <input type="email" name="email" placeholder="Enter Email" >
+                      <input type="submit" value="JOIN">
+                 </form>
+                
+                <ul>
+                    <li><a href="" class="hide twitter">Twitter</a></li>
+                    <li><a href="" class="hide google_plus">Google plus</a></li>
+                    <li><a href="" class="hide facebook">Facebook</a></li>
+                </ul>
+            </section>
+        
+
+        </main><!--/main-->
+        <aside>
+            <section>
+                <h3>Also recommended for you</h3>
+                <ul>
+                    <li><a href=""> &raquo; Jupiter & His Mighty Company</a></li>
+                    <li><a href=""> &raquo; The Golden Age</a></li>
+                    <li><a href=""> &raquo; The Story of Prometheus</a></li>
+                    <li><a href=""> &raquo; The Flood</a></li>
+                    <li><a href=""> &raquo; The Story of Io</a></li>
+                    <li><a href=""> &raquo; The Wonderful Weaver</a></li>
+                    <li><a href=""> &raquo; Cadmus and Europa</a></li>
+                    <li><a href=""> &raquo; The Quest for Medusa's Head</a></li>
+                </ul>
+            </section>
+
+        </aside>
+
+        <div class="dream-ad" style="border: 1px solid #999; padding: 0; background: #eee; ">
+            <img src="images/dream-banner3.jpg" alt=""   >
+        </div>
+        
+     
+    
+    </section>
+
+    <!--Start of Articles-lists Posts-->
+    <section class="resources">
+        <header class="section_header">
+            <h2 class="section-heading">
+                <span class="icon icon--articles">
+                </span>
+                Related Resources
+            </h2>
+
+        </header>
+        <div class="resources-inner-wrapper">
+            <!--resource--post1-->
+            <div class="resources-inner resource-one">
+                <div class="resource_image img1">
+                    <a href="#">
+                    <img src="images/img6.jpg" alt="Image placeholder">                        </a>
+                </div>
+                <div class="resource_content">
+                    <header class="resource_header">
+                        <h3 class="resource_title"><a href="#">Resource One</a></h3>
+                        <div class="resource_meta">August 18th, 2020</div>
+                    </header>
+                    <div class="resource_body">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut,<a href="#">Mbrianz</a></p>
+                    </div>
+                    <footer class="resource_footer">
+                        <a href="#">Read more</a>
+                    </footer>
+                </div>  
+
+            </div> <!--/resource--post1-->
+
+        <!--resource--post2-->
+        <div class="resources-inner resource-two">
+            <div class="resource_image img2">
+                <a href="#">
+                  <img src="images/img2.jpg" alt="Image placeholder">                       
+                 </a>
+            </div>
+            <div class="resource_content">
+                <header class="resource_header">
+                  <h3 class="resource_title"><a href="#">Resource two</a></h3>
+                  <div class="resource_meta">August 18th, 2020</div>
+                </header>
+                <div class="resource_body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut,<a  class=""  href="#">Mbrianz</a></p>
+                </div>
+                <footer class="resource_footer">
+                  <a href="#">Read more</a>
+                </footer>
+              </div>   
+            
+        </div><!--/resource--post2-->
+
+        <!--resource--post3-->
+        <div class="resources-inner resource-three">
+            <div class="resource_image img3">
+                        <a href="#">
+                          <img src="images/img4.jpg" alt="Image placeholder">                        </a>
+            </div>
+            <div class="resource_content">
+                <header class="resource_header">
+                  <h3 class="resource_title"><a href="#">Resource Three</a></h3>
+                  <div class="resource_meta">August 18th, 2020</div>
+                </header>
+                <div class="resource_body">
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt nisi ut,<a href="#">Mbrianz</a></p>
+                </div>
+                <footer class="resource_footer">
+                  <a href="#">Read more</a>
+                </footer>
+              </div>
+            
+        </div> <!--/resouce--post3-->
+
+    </div>
+
+    </section>  <!--/Start of Articles-lists Posts-->
+
+    <footer class="site-footer">
+        <p>&copy;2020 Dream Poultry &amp; Animal Farm, All rights reserved<br>Website developed by Mbrianz productions</p>
+    </footer>
+
+
+
+<!--Javasript for the websitemenu on mobile-->
+    <script>
+
+        (function() {
+                var menu = document.querySelector('ul'),
+                    menulink = document.querySelector('.websitemenu-icon img');
+
+                menulink.addEventListener('click', function(e) {
+                    menu.classList.toggle('menu');
+                     e.preventDefault();
+                });   
+        })();
+
+    </script>
+</body>
+</html>
